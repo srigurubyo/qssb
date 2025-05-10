@@ -32,7 +32,7 @@ body{
     font-size: 18px;
 }
 header .navbar-brand img {
-    max-height: 27px;
+    max-height: 48px;
 }
 .navbar .navbar-nav .simple-dropdown .dropdown-menu {
     width: 260px;
@@ -114,7 +114,7 @@ footer .elements-social li {
     margin: 0 10px 0 0;
 }
 footer .footer-logo img {
-    max-height: 27px;
+    max-height: 48px;
 }
 footer {
     padding-bottom: 30px;
