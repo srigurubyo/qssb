@@ -7,7 +7,7 @@
 :root {      
     --alt-font: 'Inter', sans-serif;
     --primary-font: 'Inter', sans-serif;
-    --base-color: #f96f4a;
+    --base-color: #215826;
     --dark-gray: #1f242e; 
     --yellow: #ffeb7d; 
     --medium-gray: #717580;
@@ -54,7 +54,7 @@ header .navbar-brand img {
     background-color: #fff1ee;
 } 
 .bg-base-color-transparent {
-    background-color: rgba(255, 122, 86,.9);
+    background-color: rgba(40, 134, 63, 0.9);
 }
 /* bg gradient */
 .bg-gradient-black-green { 
@@ -197,3 +197,54 @@ footer {
     }
    
 }
+/* Base (fallback) */
+.qssb-nav {
+  /* gradient is inline; keep here if you prefer: 
+  background: linear-gradient(to right, rgba(220,220,220,0.95), rgba(120,120,120,0.95)) !important; */
+  backdrop-filter: saturate(120%) blur(6px);
+  -webkit-backdrop-filter: saturate(120%) blur(6px);
+  box-shadow: 0 2px 14px rgba(0,0,0,.15);
+}
+
+/* Logo defaults */
+.qssb-nav .navbar-brand img {
+  height: auto;
+  display: block;
+}
+
+/* Mobile: ≤576px — slimmest */
+@media (max-width: 576px) {
+  .qssb-nav { padding-top: 6px !important; padding-bottom: 6px !important; }
+  .qssb-nav .navbar-brand img { max-height: 32px; }
+  .qssb-nav .navbar-toggler-line { height: 2px; }
+}
+
+/* Tablet: 577–991px */
+@media (min-width: 577px) and (max-width: 991.98px) {
+  .qssb-nav { padding-top: 8px !important; padding-bottom: 8px !important; }
+  .qssb-nav .navbar-brand img { max-height: 38px; }
+  .qssb-nav .navbar-toggler-line { height: 2.5px; }
+}
+
+/* Desktop: ≥992px */
+@media (min-width: 992px) {
+  .qssb-nav { padding-top: 10px !important; padding-bottom: 10px !important; }
+  .qssb-nav .navbar-brand img { max-height: 44px; }
+}
+/* Dark scrim over banner */
+.banner-scrim {
+  position: absolute;
+  inset: 0; /* covers entire section */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),   /* top darker */
+    rgba(0, 0, 0, 0.6)    /* bottom slightly darker */
+  );
+  z-index: 0;
+}
+
+
+.text-base-color,
+.btn-link.text-base-color {
+  color: #215826 !important;
+}
+

@@ -93,7 +93,11 @@
         <!-- start header -->
         <header>
             <!-- start navigation -->
-            <nav class="navbar navbar-expand-lg header-light header-transparent bg-transparent disable-fixed">
+            <nav class="navbar navbar-expand-lg header-light disable-fixed"
+     style="background:linear-gradient(to right, rgba(220,220,220,0.95), rgba(120,120,120,0.95)); padding-top:0px; padding-bottom:0px;">
+
+
+
                 <div class="container-fluid">
                     <div class="col-auto col-lg-2 me-lg-0 me-auto">
                         <a class="navbar-brand" href="index.html">
@@ -177,8 +181,17 @@
         <!-- end header -->
         <!-- start banner -->
         <section class="p-0 full-screen md-h-600px sm-h-600px ipad-top-space-margin background-position-center-top position-relative lg-overflow-hidden" style="background-image: url('saeimages/palm.jpg')">
+            <div class="banner-scrim"></div>
+
 
     <div class="bg-gradient-black-green position-absolute left-0px top-0px h-100 w-100 z-index-minus-1"></div>
+    <!-- Dark scrim overlay (on top of image, below content) -->
+<div style="
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.55) 100%);
+  z-index:0;
+"></div>
+
     <div class="container h-100">
         <div class="row align-items-center h-100">
             <div class="col-lg-6 col-md-9 position-relative z-index-1 d-flex flex-column justify-content-center h-100">  
@@ -188,9 +201,12 @@
                     <span class="fw-800 d-inline-block" data-fancy-text='{ "effect": "wave", "string": ["growth" ,"creation","innovation"], "duration": 2000 }'></span>
                 </div>
 
-                <div class="fs-20 lh-34 xs-fs-19 mb-35px xs-mb-20px w-85 lg-w-95 sm-w-100 ls-minus-05px" style="color:#ffffff;" data-anime='{ "opacity": [0, 1], "translateX": [-100, 0], "duration": 1000, "delay": 1000, "easing": "easeOutCubic" }'>
-                    End-to-End Solutions in Agriculture, Machinery, Construction & Technology.
-                </div>
+                <div class="fs-20 lh-34 xs-fs-19 mb-35px xs-mb-20px w-85 lg-w-95 sm-w-100 ls-minus-05px"
+     style="position:relative; z-index:1; color:#fff; background:rgba(0,0,0,.45); padding:10px 16px; border-radius:8px;"
+     data-anime='{ "opacity": [0, 1], "translateX": [-100, 0], "duration": 1000, "delay": 1000, "easing": "easeOutCubic" }'>
+  End-to-End Solutions in Agriculture, Machinery, Construction & Technology.
+</div>
+
 
                 <div data-anime='{ "el": "childs", "opacity": [0, 1], "translateX": [-100, 0], "staggervalue": -200, "duration": 1000, "delay": 1500, "easing": "easeOutCubic" }'>
                     <a href="about.html" class="btn btn-extra-large btn-white btn-hover-animation-switch btn-round-edge btn-box-shadow me-20px fw-400 xs-mt-10px xs-mb-10px">
@@ -200,29 +216,36 @@
                             <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
                         </span>
                     </a>
-                    <a href="contact.html" class="btn btn-extra-large btn-primary btn-round-edge btn-box-shadow fw-600 xs-mt-10px xs-mb-10px" style="color:#fff; background:#0b5cff; border:none;">Get started</a>
+                    <a href="contact.html" class="btn btn-extra-large btn-primary btn-round-edge btn-box-shadow fw-600 xs-mt-10px xs-mb-10px" style="color:#fff; background:#0a3486; border:none;">Get started</a>
                 </div>
 
-                <div class="row w-100 position-absolute md-position-relative bottom-0 mb-14 md-mb-0 md-mt-40px sm-mt-30px xs-mt-20px align-items-center" data-anime='{ "el": "childs", "opacity": [0, 1], "staggervalue": -200, "translateX": [-100, 0], "duration": 1000, "delay": 1700, "easing": "easeOutQuad" }'>
-                    <div class="d-flex align-items-center justify-content-center flex-nowrap gap-4 mt-4">
-                        <div class="d-flex align-items-center">
-                          <i class="fa-solid fa-check text-white bg-jungle-green rounded-circle p-1"></i>
-                          <span class="ms-2 text-white text-nowrap">Plantation</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                          <i class="fa-solid fa-check text-white bg-jungle-green rounded-circle p-1"></i>
-                          <span class="ms-2 text-white text-nowrap">Heavy Machinery</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                          <i class="fa-solid fa-check text-white bg-jungle-green rounded-circle p-1"></i>
-                          <span class="ms-2 text-white text-nowrap">Construction Equipment</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                          <i class="fa-solid fa-check text-white bg-jungle-green rounded-circle p-1"></i>
-                          <span class="ms-2 text-white text-nowrap">Technology Solutions</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="row w-100 position-absolute md-position-relative bottom-0 mb-14 md-mb-0 md-mt-40px sm-mt-30px xs-mt-20px align-items-center"
+     data-anime='{ "el": "childs", "opacity": [0, 1], "staggervalue": -200, "translateX": [-100, 0], "duration": 1000, "delay": 1700, "easing": "easeOutQuad" }'>
+
+  <!-- Backdrop wrapper -->
+  <div style="position:relative; z-index:1; background:rgba(0,0,0,.45); padding:10px 16px; border-radius:8px; margin-top:12px;">
+    <div class="d-flex align-items-center justify-content-center flex-nowrap gap-4 mt-1">
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-check text-white bg-jungle-green rounded-circle p-1"></i>
+        <span class="ms-2 text-white text-nowrap">Plantation</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-check text-white bg-jungle-green rounded-circle p-1"></i>
+        <span class="ms-2 text-white text-nowrap">Heavy Machinery</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-check text-white bg-jungle-green rounded-circle p-1"></i>
+        <span class="ms-2 text-white text-nowrap">Construction Equipment</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-check text-white bg-jungle-green rounded-circle p-1"></i>
+        <span class="ms-2 text-white text-nowrap">Technology Solutions</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
             </div>
         </div> 
@@ -270,8 +293,8 @@
             <div class="container overlap-gap-section">
                 <div class="row align-items-center justify-content-md-center">
                     <div class="col-lg-6 col-md-10 position-relative md-mb-50px sm-mb-40px"> 
-                        <figure class="position-relative m-0 text-center" data-anime='{ "effect": "slide", "color": "#fff2ef", "direction":"lr", "easing": "easeOutQuad", "delay":50}'>
-                            <img src="saeimages/Company-bro.svg" alt="">
+                        <figure class="position-relative m-0 text-center" data-anime='{ "effect": "slide", "color": "#a6c2a1", "direction":"lr", "easing": "easeOutQuad", "delay":50}'>
+                            <img src="saeimages/about.png" alt="">
                             <figcaption class="position-absolute bottom-90px left-0px" data-anime='{ "translateY": [-50, 0], "opacity": [0,1], "duration": 800, "delay": 1000, "staggervalue": 300, "easing": "easeOutQuad" }'>
                                 <img src="saeimages/Construction-pana.svg" class="animation-float box-shadow-quadruple-large border-radius-6px" alt="">
                             </figcaption>
@@ -605,7 +628,7 @@
                         </a>-->
                     </div> 
                     <div class="col-lg-6 offset-xl-1 col-md-10 position-relative"> 
-                        <figure class="position-relative m-0 text-center" data-anime='{ "effect": "slide", "color": "#fff2ef", "direction":"rl", "easing": "easeOutQuad", "delay":50}'>
+                        <figure class="position-relative m-0 text-center" data-anime='{ "effect": "slide", "color": "#a6c2a1", "direction":"rl", "easing": "easeOutQuad", "delay":50}'>
                             <img src="saeimages/Remote meeting-bro.svg" alt="">
                             <img src="saeimages/New employee-pana.svg" alt="">
                             
