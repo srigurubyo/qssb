@@ -243,8 +243,12 @@ footer {
 }
 
 
-.text-base-color,
-.btn-link.text-base-color {
+.text-base-color {
   color: #215826 !important;
 }
+
+.feature-box-icon {
+  background: transparent !important;
+}
+
 
